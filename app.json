@@ -1,0 +1,21 @@
+{
+  "name": "Calendar",
+  "description": "Calendar of select meetup activities - R, Python, and Machine Learning",
+  "image": "heroku/python",
+  "repository": "https://github.com/patilv/meetup_ical_export-master",
+  "keywords": ["python", "calendar" ],
+  "addons": [ "heroku-postgresql" ],
+  "env": {
+    "SECRET_KEY": {
+      "description": "The secret key for the Django application.",
+      "generator": "secret"
+    }
+  },
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "python app.py test"
+      }
+    }
+  }
+}
